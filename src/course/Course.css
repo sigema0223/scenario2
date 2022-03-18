@@ -3,12 +3,12 @@
   flex-direction: row;
 }
 
-.Catalogue {
-  /* width: 100vw; */
+.Outline {
   height: 100vh;
   background: black;
+  padding-top: 1em;
   padding-left: 2em;
-  padding-right: 1em;
+  padding-right: 3em;
 }
 
 .CourseTitle {

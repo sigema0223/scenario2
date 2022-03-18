@@ -1,0 +1,16 @@
+.CatalogueContainer {
+  flex-direction: row;
+  width: 100vw;
+  /* background-color: "red"; */
+  background: black;
+}
+
+.Card {
+  float: left;
+  margin-left: 45px;
+  color: black;
+}
+
+.CardTitle {
+  font-size: 1.3em;
+}

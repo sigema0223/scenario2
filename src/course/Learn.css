@@ -1,9 +1,10 @@
 .Learn {
+  width: 100vw;
 }
 
-.QuestionContainer {
+.Container {
   margin: auto;
-  width: 50%;
+  width: 60%;
 }
 
 .Question {
@@ -20,12 +21,13 @@
   font-size: 1.3em;
   padding: 10px 18px; /* vert, hori */
   background: white;
+  border-width: 2px;
   border-color: black;
   border-radius: 8px;
 }
 
 .ChoiceButton:hover {
-  border-color: aqua;
+  border-color: mediumspringgreen;
 }
 
 p {

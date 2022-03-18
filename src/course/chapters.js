@@ -1,14 +1,33 @@
+function getCourseTitle(course) {
+  switch (course) {
+    case "syllogism":
+      return "Intro to syllogism";
+    case "negation":
+      return "Practice Negation with AI";
+  }
+}
+
 const chapters = [
   {
-    id: 1,
-    course: "Logic",
-    chapter: "What’s a negation?",
+    course: "syllogism",
+    chapter: "What's syllogism",
+    isQuiz: false,
   },
   {
-    id: 2,
-    course: "Logic",
+    course: "syllogism",
+    chapter: "Practice syllogism",
+    isQuiz: true,
+  },
+  {
+    course: "negation",
+    chapter: "What's negation?",
+    isQuiz: false,
+  },
+  {
+    course: "negation",
     chapter: "Practice negation",
+    isQuiz: true,
   },
 ];
 
-export default chapters;
+export { getCourseTitle, chapters };

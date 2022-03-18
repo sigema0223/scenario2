@@ -1,0 +1,41 @@
+.Description {
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 50px;
+  /* padding-left: 120px; */
+  /* display: flex; */
+  flex-direction: row;
+  color: white;
+}
+
+span {
+  font-family: "Anonymous Pro";
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.description_title {
+  font-size: 65px;
+  padding: 50px;
+}
+
+.description_text {
+  padding-left: 50px;
+  width: 600px;
+  font-size: 24px;
+}
+
+.description_context {
+  display: flex;
+  flex-direction: column;
+}
+
+.description_image {
+  width: 30%;
+  padding-left: 150px;
+  padding-right: 20px;
+  object-fit: contain;
+}
