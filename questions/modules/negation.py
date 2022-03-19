@@ -2,6 +2,9 @@ import openai
 import random
 class negation_generator:
         def __init__(self):
+            """
+            Initializes strings that are used as a prompts for generating content with GPT-3
+            """
             self.gen_con_Q = "The negation of a statement is the opposite of the given mathematical statement. To negate a statement of the form If A, then B we should replace it with the statement A and negation of B. Consider the statement If I am rich, then I am happy. For this statement to be false, I would need to be rich and not happy. If A is the statement I am rich and B is the statement I am happy, then the negation of this statement is I am rich, and I am not happy. Write examples of negation of the given statements. \n\nstatement:  If I fail the exam, then my family will reject me.\nnegation: I failed the exam and my family did not reject me.\n\nstatement: If I am going to the party, then I am going to the library.\nnegation: I am going to the party and I am not going to the library.\n\nstatement: If I eat all my vegetables, then I will grow tall.\nnegation: I ate all my vegetables and I did not grow tall.\n\nstatement: "
             self.gen_con_S = "Conditional sentences are statements discussing known factors or hypothetical situations and their consequences. Complete conditional sentences contain a conditional clause (often referred to as the if-clause) and the consequence. If, then” statements require commas to separate the two clauses that result. If I use correct punctuation, then I will include commas where necessary. Continue to generate sentences conditional sentences shown in the example: \n\n1.If it rains this afternoon, then yesterday's weather forecast was wrong\n2. I would travel around the world if I won the lottery.\n2. If I won the lottery, then I would travel around the world.\n3. If water reaches 100 degrees, then it boils.\n4."
             self.gen_statement = "A statement as such is a claim that something is or is not true. A statement is true if what it claims is true, and false if what it claims is not true. It must be possible to determine whether a statement is true or false. When we assert that people have bones, we can know with certainty that it is true, and therefore it qualifies as a statement. Generate examples of statements:\n\n1. Tailgating is a top cause of car accidents.\n2. It is raining at this moment.\n3. The trains are always late.\n4."
@@ -13,6 +16,9 @@ class negation_generator:
             self.alter_txt = "Slightly alter the subject of the statement so the new alteration resembles it but has a different meaning. Generate new alterations based on the given statement.\n\nStatement: All the boys wanted to win the match.\nAlteration: All the boys from my high school wanted to win the marathon.\nStatement: If I miss my train, then I will take the bus.\nAlteration: If I miss my bus, then I will take a taxi.\nStatement: This joke terrified and amused the internet.\nAlteration: This news terrified and amused the people on the internet.\nStatement:"
 
         def gpt3(self,stext, temp, tokens):
+            """
+            Method for connecting to GPT-3 and generating text
+            """
             openai.api_key = "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"
             response = openai.Completion.create(
                 engine="davinci-instruct-beta",
@@ -26,7 +32,10 @@ class negation_generator:
             content = response.choices[0].text.split(".")
             return content
 
-        def if_sentence_check(self):   
+        def if_sentence_check(self): 
+            """
+            Generates IF STATEMENT
+            """
             while(True):
                 response = self.gpt3(self.gen_con_S,0.95,40)[0].split(" ")
                 if_num = 0
@@ -40,6 +49,9 @@ class negation_generator:
                     return(' '.join(word for word in response[1:]))
 
         def if_question_check(self,txt):    
+            """
+            Generates NEGATION of IF STATEMENT
+            """                
             check = True
             while(check):
                 response = self.gpt3(self.gen_con_Q+txt+"\nnegation:",0.78,45)[0].split(" ")
@@ -57,10 +69,16 @@ class negation_generator:
             return([txt,' '.join(word for word in response[0:])])
 
         def statement_check(self):    
+            """
+            Generates short logical STATEMENT
+            """      
             response =self.gpt3(self.gen_statement,0.9,10)[0].split(" ")
             return(' '.join(word for word in response[1:]))
 
         def neg_check(self,txt):
+            """
+            Generates NEGATION of any logical STATEMENT (functions worse than specific negation)
+            """                      
             if ("." not in txt):
                 txt = (txt + ".")
             while(True):
@@ -70,6 +88,9 @@ class negation_generator:
                     return(neg.replace(".", ""))
 
         def generate_AorB(self): 
+            """
+            Generates AorB statement and NEGATION of AorB statement
+            """                      
             A = self.statement_check()
             B = self.statement_check().lower()
             txt = str(A+" or "+B)
@@ -79,6 +100,9 @@ class negation_generator:
             return [txt,response]
 
         def generate_AandB(self): 
+            """
+            Generates AandB statement and NEGATION of AandB statement
+            """                     
             A = self.statement_check()
             B = self.statement_check().lower()
             txt = str(A+" and "+B)
@@ -88,6 +112,9 @@ class negation_generator:
             return [txt,response]
 
         def forall_sentence_check(self):   
+            """
+            Generates FOR ALL statement
+            """                     
             while(True):
                 response =self.gpt3(self.gen_uni_S,0.95,30)[0].split(" ")
                 for_num = 0
@@ -103,7 +130,10 @@ class negation_generator:
                 if (for_num>=1 and every_num>=1 and n_num<1):
                     return(' '.join(word for word in response[1:]))
 
-        def forall_question_check(self,txt):    
+        def forall_question_check(self,txt):   
+            """
+            Negates FOR ALL statement
+            """                 
             check = True
             while(check):
                 response =self.gpt3(str(self.gen_uni_Q)+str(txt)+"\nnegation:",0.7,30)
@@ -117,7 +147,10 @@ class negation_generator:
                     check = False
             return([txt,' '.join(word for word in response[1:])])
 
-        def thereis_sentence_check(self):   
+        def thereis_sentence_check(self):  
+            """
+            Generates THERE IS statement
+            """                  
             while(True):
                 response =self.gpt3(self.gen_exi_S,0.9,30)[0].split(" ")
                 there_num = 0
@@ -131,6 +164,9 @@ class negation_generator:
                     return(' '.join(word for word in response[1:]))
 
         def thereis_question_check(self,txt):    
+            """
+            Negates THERE IS statement
+            """                      
             check = True
             while(check):
                 response =self.gpt3(str(self.gen_exi_Q)+str(txt)+"\nnegation:",0.8,30)
@@ -138,6 +174,9 @@ class negation_generator:
                     return([txt,response[0]])
 
         def alter_check(self,txt):
+            """
+            Generates ALTERATION TO any statement
+            """                  
             if ("." not in txt):
                 txt = (txt + ".")
             while(True):
@@ -147,6 +186,9 @@ class negation_generator:
                     return(neg.replace(".", ""))
 
         def answer_corruptor(self,txt):
+            """
+            Generates list of 3 WRONG answers
+            """              
             three_bad_an = [txt]
             if(" or " in txt):
                 three_bad_an.append(txt.replace(" or ", " and "))
@@ -167,6 +209,10 @@ class negation_generator:
             return (random.sample(three_bad_an, 3))
 
         def main(self,x):
+            """
+            Generates list of QUESTION (eg. the pre-negation statement), 1 correct answer (eg. post negation statement), 
+            and a list of 3 wrong answers (eg. 3 incorrectly negated statements)
+            """                 
             check = True
             while(check):
                 if(x == 1):
