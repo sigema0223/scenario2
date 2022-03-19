@@ -7,6 +7,9 @@ class syllogisms():
             self.gen_syl = "A syllogism is a kind of logical argument that applies deductive reasoning to arrive at a conclusion based on two propositions that are asserted or assumed to be true. A syllogism arises when two true premises validly imply a conclusion or the main point that the argument aims to get across. In this task, the example will be given with variables instead of propositions and the task is to generate syllogism and the list of objects propositions used in it. It is important to keep them in order s, m and p:\n\nExample: All (m) are (s), some (m) are (p). Some (s) are (p).\nSolution:  All squares are equilateral, some squares are rectangles. Some rectangles are equilateral.\nList: [equilateral, square, rectangle]\n\nExample: All (s) are (m), all (m) are (p). All (s) are (p).\nSolution:  All employees are human, all humans are mammals. All employees are mammals.\nList: [employee, human, mammal]\nExample: Some (m) are (s), no (p) is (m) some (s) are not (p).\nSolution:  Some devices are toys, no dog is a device. Some toys are not dogs. \nList: [toy, device, dog]\nExample:"
         
         def plur(self, txt):
+            """
+            Changes singular form of a word to plural
+            """
             if("(" in txt):
                 return txt
             else:
@@ -26,6 +29,9 @@ class syllogisms():
             content = response.choices[0].text.split(".")
             return content
         
+            """
+            Here are 24 methods for generating 24 different types of syllogisms as described in the paper (https://arxiv.org/pdf/2007.07320.pdf)
+            """ 
         def barbara(self,s,m,p):
             question = "All " + str(self.plur(s))+" are " + str(self.plur(m)) +", all " +str(self.plur(m)) +" are " + str(self.plur(p))
             answer = "All " + str(self.plur(s))+" are " + str(self.plur(p))
@@ -148,6 +154,9 @@ class syllogisms():
             return question,answer,4
         
         def neg_check(self,txt):
+            """
+            Negates statement
+            """
             if ("." not in txt):
                 txt = (txt + ".")
             while(True):
@@ -157,6 +166,9 @@ class syllogisms():
                     return(neg.replace(".", ""))
         
         def gen_question(self,num):
+            """
+            Picks one of the 24 syllogism generating methods (depending on the variable num) and via GPT-3 generates the coresponding syllogism
+            """
             functions = [self.barbara,self.barbari,self.celarent,self.cesare,self.calemes,
                         self.camestres,self.darii,self.datisi,self.darapti,self.disamis,
                         self.dimatis,self.baroco,self.cesaro,self.celaront,self.camestros,
@@ -176,6 +188,9 @@ class syllogisms():
                         return functions[num](s,m,p),s,m,p
                     
         def answer_corruptor(self,det,s,m,p):
+            """
+            Generates other 3 wrong answers
+            """
             three_bad_an = []
             if(det!=1):
                 three_bad_an.append("All " + str(self.plur(s))+" are " + str(self.plur(p)))
@@ -188,10 +203,13 @@ class syllogisms():
             return (three_bad_an)
         
         def main(self, num):
+            """
+            Generates Question, Correct answer, and 3 wrong answers
+            """
             lst = self.gen_question(num)
             question = lst[0][0]
-            right_answer = lst[0][1]
+            correct_answer = lst[0][1]
             wrong_answer = self.answer_corruptor(lst[0][2],lst[1],lst[2],lst[3])
-            return question,right_answer,wrong_answer
+            return question,correct_answer,wrong_answer
             
         
