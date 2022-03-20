@@ -3,7 +3,7 @@
         "id": 0,
         "question": "No  triangle is car, all  figures are  triangles",
         "answer": "No car is  figure",
-        "wrong-answers": [
+        "wrongAnswers": [
             "All cars are  figures",
             "Some cars are  figures",
             "Some cars are not  figures"
@@ -13,7 +13,7 @@
         "id": 1,
         "question": "All squares are  rectangles, no  rectangle is  square",
         "answer": "No square is  square",
-        "wrong-answers": [
+        "wrongAnswers": [
             "All squares are  squares",
             "Some squares are  squares",
             "Some squares are not  squares"
@@ -23,7 +23,7 @@
         "id": 2,
         "question": "All equilaterals are  squares, no  rectangle is  square",
         "answer": "No equilateral is  rectangle",
-        "wrong-answers": [
+        "wrongAnswers": [
             "All equilaterals are  rectangles",
             "Some equilaterals are  rectangles",
             "Some equilaterals are not  rectangles"
@@ -33,7 +33,7 @@
         "id": 3,
         "question": "All squares are  rectangles, no  rectangle is  circle",
         "answer": "No square is  circle",
-        "wrong-answers": [
+        "wrongAnswers": [
             "All squares are  circles",
             "Some squares are  circles",
             "Some squares are not  circles"
@@ -43,7 +43,7 @@
         "id": 4,
         "question": "All equilaterals are  squares, all  squares are  rectangles",
         "answer": "Some equilaterals are  rectangles",
-        "wrong-answers": [
+        "wrongAnswers": [
             "All equilaterals are  rectangles",
             "No equilateral is  rectangle",
             "Some equilaterals are not  rectangles"
@@ -53,7 +53,7 @@
         "id": 5,
         "question": "All rectangles are  squares, no  triangle is  square",
         "answer": "No rectangle is  triangle",
-        "wrong-answers": [
+        "wrongAnswers": [
             "All rectangles are  triangles",
             "Some rectangles are  triangles",
             "Some rectangles are not  triangles"
@@ -63,7 +63,7 @@
         "id": 6,
         "question": "No  square is bear, all  rectangles are  squares",
         "answer": "No bear is  rectangle",
-        "wrong-answers": [
+        "wrongAnswers": [
             "All bears are  rectangles",
             "Some bears are  rectangles",
             "Some bears are not  rectangles"
@@ -73,7 +73,7 @@
         "id": 7,
         "question": "No mammal is  dog, all  mammals are  dogs",
         "answer": "No mammal is  mammal",
-        "wrong-answers": [
+        "wrongAnswers": [
             "All mammals are  mammals",
             "Some mammals are  mammals",
             "Some mammals are not  mammals"
@@ -83,7 +83,7 @@
         "id": 8,
         "question": "All squares are  rectangles, all  rectangles are  squares",
         "answer": "Some squares are  squares",
-        "wrong-answers": [
+        "wrongAnswers": [
             "All squares are  squares",
             "No square is  square",
             "Some squares are not  squares"
@@ -93,7 +93,7 @@
         "id": 9,
         "question": "All employees are  mammals, no  mammal is  plant",
         "answer": "No employee is  plant",
-        "wrong-answers": [
+        "wrongAnswers": [
             "All employees are  plants",
             "Some employees are  plants",
             "Some employees are not  plants"
