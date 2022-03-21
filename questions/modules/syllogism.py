@@ -177,7 +177,7 @@ class syllogisms():
                         self.fesapo]
             txt = functions[num]("(s)","(m)","(p)")[0] +". " + functions[num]("(s)","(m)","(p)")[1]
             while(True):   
-                response = self.gpt3(gen_syl+txt+"\nSolution:",0.6,40)
+                response = self.gpt3(self.gen_syl+txt+"\nSolution:",0.6,40)
                 if("[" in response[-1]):
                     val = response[-1].split('[', 1)[1].split(']')[0]
                     val = val.split(',')
