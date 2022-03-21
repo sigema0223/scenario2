@@ -3,17 +3,18 @@ from syllogisms import syllogisms
 
 import random
 import json
+import uuid
 
 
-def create_json_neg():
+def create_json_neg(condition):
     datafile = []
-    for i in range(10):
+    while condition:
         obj = {}
         questions = negation_generator()
         qs = questions.main(random.randint(1, 5))
         randIntHolder = random.randint(0, len(qs[2]))
         qs[2].insert(randIntHolder, qs[1])
-        obj["id"] = i
+        obj["id"] = uuid.uuid4()
         obj["question"] = qs[0]
         obj["answerIndex"] = randIntHolder
         obj["wrongAnswers"] = qs[2]
@@ -22,15 +23,15 @@ def create_json_neg():
     return datafile
 
 
-def create_json_syll():
+def create_json_syll(condition):
     datafile = []
-    for i in range(10):
+    while condition:
         obj = {}
         questions = syllogisms()
         qs, ans, wa = questions.main(random.randint(1, 5))
         randIntHolder = random.randint(0, len(wa))
         wa.insert(randIntHolder, ans)
-        obj["id"] = i
+        obj["id"] = uuid.uuid4()
         obj["question"] = qs
         obj["answerIndex"] = randIntHolder
         obj["wrongAnswers"] = wa
@@ -43,8 +44,8 @@ def generateQs(sylFilename, negFilename, condition):
 
     while condition:
         # read file name
-        nData = create_json_neg()
-        sData = create_json_syll()
+        nData = create_json_neg(condition)
+        sData = create_json_syll(condition)
         with open(sylFilename, "r") as file, open(negFilename, "r") as file_:
             data = json.load(file)
             data_ = json.load(data_)
