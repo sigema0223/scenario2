@@ -1,0 +1,335 @@
+[
+    {
+        "id": 0,
+        "question": "No  triangle is car, all  figures are  triangles",
+        "answerIndex": 0,
+        "wrongAnswers": [
+            "No car is  figure",
+            "All cars are  figures",
+            "Some cars are  figures",
+            "Some cars are not  figures"
+        ]
+    },
+    {
+        "id": 1,
+        "question": "All squares are  rectangles, no  rectangle is  square",
+        "answerIndex": 1,
+        "wrongAnswers": [
+            "All squares are  squares",
+            "No square is  square",
+            "Some squares are  squares",
+            "Some squares are not  squares"
+        ]
+    },
+    {
+        "id": 2,
+        "question": "All equilaterals are  squares, no  rectangle is  square",
+        "answerIndex": "No equilateral is  rectangle",
+        "wrongAnswers": [
+            "All equilaterals are  rectangles",
+            "Some equilaterals are  rectangles",
+            "Some equilaterals are not  rectangles"
+        ]
+    },
+    {
+        "id": 3,
+        "question": "All squares are  rectangles, no  rectangle is  circle",
+        "answerIndex": 3,
+        "wrongAnswers": [
+            "All squares are  circles",
+            "Some squares are  circles",
+            "Some squares are not  circles",
+            "No square is  circle"
+        ]
+    },
+    {
+        "id": 4,
+        "question": "All equilaterals are  squares, all  squares are  rectangles",
+        "answerIndex": 2,
+        "wrongAnswers": [
+            "All equilaterals are  rectangles",
+            "No equilateral is  rectangle",
+            "Some equilaterals are  rectangles",
+            "Some equilaterals are not  rectangles"
+        ]
+    },
+    {
+        "id": 5,
+        "question": "All rectangles are  squares, no  triangle is  square",
+        "answerIndex": 1,
+        "wrongAnswers": [
+            "All rectangles are  triangles",
+            "No rectangle is  triangle",
+            "Some rectangles are  triangles",
+            "Some rectangles are not  triangles"
+        ]
+    },
+    {
+        "id": 6,
+        "question": "No  square is bear, all  rectangles are  squares",
+        "answerIndex": 2,
+        "wrongAnswers": [
+            "All bears are  rectangles",
+            "Some bears are  rectangles",
+            "No bear is  rectangle",
+            "Some bears are not  rectangles"
+        ]
+    },
+    {
+        "id": 7,
+        "question": "No mammal is  dog, all  mammals are  dogs",
+        "answerIndex": 3,
+        "wrongAnswers": [
+            "All mammals are  mammals",
+            "Some mammals are  mammals",
+            "Some mammals are not  mammals",
+            "No mammal is  mammal"
+        ]
+    },
+    {
+        "id": 8,
+        "question": "All squares are  rectangles, all  rectangles are  squares",
+        "answerIndex": 0,
+        "wrongAnswers": [
+            "Some squares are  squares",
+            "All squares are  squares",
+            "No square is  square",
+            "Some squares are not  squares"
+        ]
+    },
+    {
+        "id": 9,
+        "question": "All employees are  mammals, no  mammal is  plant",
+        "answerIndex": 2,
+        "wrongAnswers": [
+            "All employees are  plants",
+            "Some employees are  plants",
+            "No employee is  plant",
+            "Some employees are not  plants"
+        ]
+    },
+    [
+        {
+            "id": 0,
+            "question": "All equilaterals are  squares, no  rectangle is  square",
+            "answerIndex": 0,
+            "wrongAnswers": [
+                "No equilateral is  rectangle",
+                "All equilaterals are  rectangles",
+                "Some equilaterals are  rectangles",
+                "Some equilaterals are not  rectangles"
+            ]
+        },
+        {
+            "id": 1,
+            "question": "All employees are  humans, no  human is  penguin",
+            "answerIndex": 0,
+            "wrongAnswers": [
+                "No employee is  penguin",
+                "All employees are  penguins",
+                "Some employees are  penguins",
+                "Some employees are not  penguins"
+            ]
+        },
+        {
+            "id": 2,
+            "question": "All squares are  rectangles, all  rectangles are  squares",
+            "answerIndex": 0,
+            "wrongAnswers": [
+                "Some squares are  squares",
+                "All squares are  squares",
+                "No square is  square",
+                "Some squares are not  squares"
+            ]
+        },
+        {
+            "id": 3,
+            "question": "No square is  rectangle, all  equilaterals are  rectangles",
+            "answerIndex": 0,
+            "wrongAnswers": [
+                "No square is  equilateral",
+                "All squares are  equilaterals",
+                "Some squares are  equilaterals",
+                "Some squares are not  equilaterals"
+            ]
+        },
+        {
+            "id": 4,
+            "question": "All squares are  rectangles, no  rectangle is  triangle",
+            "answerIndex": 3,
+            "wrongAnswers": [
+                "All squares are  triangles",
+                "Some squares are  triangles",
+                "Some squares are not  triangles",
+                "No square is  triangle"
+            ]
+        },
+        {
+            "id": 5,
+            "question": "No  square is circle, all  rectangles are  squares",
+            "answerIndex": 3,
+            "wrongAnswers": [
+                "All circles are  rectangles",
+                "Some circles are  rectangles",
+                "Some circles are not  rectangles",
+                "No circle is  rectangle"
+            ]
+        },
+        {
+            "id": 6,
+            "question": "No square is  circle, all  rounds are  circles",
+            "answerIndex": 3,
+            "wrongAnswers": [
+                "All squares are  rounds",
+                "Some squares are  rounds",
+                "Some squares are not  rounds",
+                "No square is  round"
+            ]
+        },
+        {
+            "id": 7,
+            "question": "All squares are  rectangles, no  equilateral is  rectangle",
+            "answerIndex": 2,
+            "wrongAnswers": [
+                "All squares are  equilaterals",
+                "Some squares are  equilaterals",
+                "No square is  equilateral",
+                "Some squares are not  equilaterals"
+            ]
+        },
+        {
+            "id": 8,
+            "question": "All stars are  planets, no  planet is  livingbeing",
+            "answerIndex": 3,
+            "wrongAnswers": [
+                "All stars are  livingbeings",
+                "Some stars are  livingbeings",
+                "Some stars are not  livingbeings",
+                "No star is  livingbeing"
+            ]
+        },
+        {
+            "id": 9,
+            "question": "All squares are  circles, no  triangle is  circle",
+            "answerIndex": 3,
+            "wrongAnswers": [
+                "All squares are  triangles",
+                "Some squares are  triangles",
+                "Some squares are not  triangles",
+                "No square is  triangle"
+            ]
+        }
+    ],
+    [
+        {
+            "id": 0,
+            "question": "All equilaterals are  squares, no  rectangle is  square",
+            "answerIndex": 1,
+            "wrongAnswers": [
+                "All equilaterals are  rectangles",
+                "No equilateral is  rectangle",
+                "Some equilaterals are  rectangles",
+                "Some equilaterals are not  rectangles"
+            ]
+        },
+        {
+            "id": 1,
+            "question": "No  circle is square, all  rectangles are  circles",
+            "answerIndex": 1,
+            "wrongAnswers": [
+                "All squares are  rectangles",
+                "No square is  rectangle",
+                "Some squares are  rectangles",
+                "Some squares are not  rectangles"
+            ]
+        },
+        {
+            "id": 2,
+            "question": "All equilaterals are  squares, no  square is  rectangle",
+            "answerIndex": 1,
+            "wrongAnswers": [
+                "All equilaterals are  rectangles",
+                "No equilateral is  rectangle",
+                "Some equilaterals are  rectangles",
+                "Some equilaterals are not  rectangles"
+            ]
+        },
+        {
+            "id": 3,
+            "question": "No  square is animal, all  rectangles are  squares",
+            "answerIndex": 2,
+            "wrongAnswers": [
+                "All animals are  rectangles",
+                "Some animals are  rectangles",
+                "No animal is  rectangle",
+                "Some animals are not  rectangles"
+            ]
+        },
+        {
+            "id": 4,
+            "question": "No animal is  dog, all  mammals are  dogs",
+            "answerIndex": 2,
+            "wrongAnswers": [
+                "All animals are  mammals",
+                "Some animals are  mammals",
+                "No animal is  mammal",
+                "Some animals are not  mammals"
+            ]
+        },
+        {
+            "id": 5,
+            "question": "All squares are  rectangles, no  rectangle is  circle",
+            "answerIndex": 0,
+            "wrongAnswers": [
+                "No square is  circle",
+                "All squares are  circles",
+                "Some squares are  circles",
+                "Some squares are not  circles"
+            ]
+        },
+        {
+            "id": 6,
+            "question": "All humans are  mammals, no  bug is  mammal",
+            "answerIndex": 2,
+            "wrongAnswers": [
+                "All humans are  bugs",
+                "Some humans are  bugs",
+                "No human is  bug",
+                "Some humans are not  bugs"
+            ]
+        },
+        {
+            "id": 7,
+            "question": "No mammal is  reptile, all  animals are  reptiles",
+            "answerIndex": 0,
+            "wrongAnswers": [
+                "No mammal is  animal",
+                "All mammals are  animals",
+                "Some mammals are  animals",
+                "Some mammals are not  animals"
+            ]
+        },
+        {
+            "id": 8,
+            "question": "All equilaterals are  squares, no  rectangle is  square",
+            "answerIndex": 2,
+            "wrongAnswers": [
+                "All equilaterals are  rectangles",
+                "Some equilaterals are  rectangles",
+                "No equilateral is  rectangle",
+                "Some equilaterals are not  rectangles"
+            ]
+        },
+        {
+            "id": 9,
+            "question": "All squares are  rectangles, no  rectangle is  square",
+            "answerIndex": 2,
+            "wrongAnswers": [
+                "All squares are  squares",
+                "Some squares are  squares",
+                "No square is  square",
+                "Some squares are not  squares"
+            ]
+        }
+    ]
+]
