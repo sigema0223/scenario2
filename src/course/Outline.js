@@ -40,8 +40,8 @@ function Outline() {
             );
           })}
       </ul>
-      <Link to="/">
-        <p className="ChapterText Bottom">Home</p>
+      <Link to="/catalogue">
+        <p className="ChapterText Bottom">Courses</p>
       </Link>
     </div>
   );

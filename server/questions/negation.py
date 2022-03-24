@@ -23,7 +23,7 @@ class negation_generator:
         """
         Method for connecting to GPT-3 and generating text
         """
-        openai.api_key = "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"
+        openai.api_key = "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"
         response = openai.Completion.create(
             engine="davinci-instruct-beta",
             prompt=stext,

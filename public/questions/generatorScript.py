@@ -60,8 +60,8 @@ def generateQs(sylFilename, negFilename, condition):
 
 if __name__ == "__main__":
     generateQs(
-        "/Users/ariel/Scenario2/scenario2/public/questions/data_syllogisms.json",
-        "scenario2/public/questions/data.json",
+        "./syllogism.json",
+        "./negation.json",
         True,
     )
 

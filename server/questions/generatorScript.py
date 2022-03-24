@@ -56,12 +56,13 @@ def generateQs(sylFilename, negFilename, condition):
         with open(sylFilename, "w") as file, open(negFilename, "w") as file_:
             json.dump(data, file, indent=4)
             json.dump(data_, file_, indent=4)
+            # condition = True
 
 
 if __name__ == "__main__":
     generateQs(
-        "/Users/ariel/Scenario2/server/questions/data.json",
-        "/Users/ariel/Scenario2/server/questions/data_syllogisms.json",
+        "../public/questions/negation.py",
+        "../public/questions/syllogism.json",
         True,
     )
 

@@ -5,6 +5,7 @@ import Home from "./home/Home";
 import Catalogue from "./catalogue/Catalogue";
 import Course from "./course/Course";
 import NavBar from "./common/NavBar.js";
+import "typeface-anonymous-pro";
 
 class App extends React.Component {
   render() {

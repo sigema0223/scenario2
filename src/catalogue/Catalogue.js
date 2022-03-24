@@ -6,7 +6,7 @@ function Catalogue() {
     <div className="CatalogueContainer">
       <CardView
         // image="https://jordanrussiacenter.org/wp-content/uploads/2020/09/putin-iron-throne.jpg"
-        image="logic.png"
+        image="syllogism.png"
         title="Intro to Syllogism"
         description="A student learns Syllogism. You are a student. Thus you study Syllogism!"
         course="syllogism"

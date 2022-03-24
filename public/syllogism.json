@@ -1,0 +1,111 @@
+[
+  {
+    "id": 0,
+    "question": "No  triangle is car, all  figures are  triangles",
+    "answerIndex": 0,
+    "wrongAnswers": [
+      "No car is  figure",
+      "All cars are  figures",
+      "Some cars are  figures",
+      "Some cars are not  figures"
+    ]
+  },
+  {
+    "id": 1,
+    "question": "All squares are  rectangles, no  rectangle is  square",
+    "answerIndex": 1,
+    "wrongAnswers": [
+      "All squares are  squares",
+      "No square is  square",
+      "Some squares are  squares",
+      "Some squares are not  squares"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "All equilaterals are  squares, no  rectangle is  square",
+    "answerIndex": "No equilateral is  rectangle",
+    "wrongAnswers": [
+      "All equilaterals are  rectangles",
+      "Some equilaterals are  rectangles",
+      "Some equilaterals are not  rectangles"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "All squares are  rectangles, no  rectangle is  circle",
+    "answerIndex": 3,
+    "wrongAnswers": [
+      "All squares are  circles",
+      "Some squares are  circles",
+      "Some squares are not  circles",
+      "No square is  circle"
+    ]
+  },
+  {
+    "id": 4,
+    "question": "All equilaterals are  squares, all  squares are  rectangles",
+    "answerIndex": 2,
+    "wrongAnswers": [
+      "All equilaterals are  rectangles",
+      "No equilateral is  rectangle",
+      "Some equilaterals are  rectangles",
+      "Some equilaterals are not  rectangles"
+    ]
+  },
+  {
+    "id": 5,
+    "question": "All rectangles are  squares, no  triangle is  square",
+    "answerIndex": 1,
+    "wrongAnswers": [
+      "All rectangles are  triangles",
+      "No rectangle is  triangle",
+      "Some rectangles are  triangles",
+      "Some rectangles are not  triangles"
+    ]
+  },
+  {
+    "id": 6,
+    "question": "No  square is bear, all  rectangles are  squares",
+    "answerIndex": 2,
+    "wrongAnswers": [
+      "All bears are  rectangles",
+      "Some bears are  rectangles",
+      "No bear is  rectangle",
+      "Some bears are not  rectangles"
+    ]
+  },
+  {
+    "id": 7,
+    "question": "No mammal is  dog, all  mammals are  dogs",
+    "answerIndex": 3,
+    "wrongAnswers": [
+      "All mammals are  mammals",
+      "Some mammals are  mammals",
+      "Some mammals are not  mammals",
+      "No mammal is  mammal"
+    ]
+  },
+  {
+    "id": 8,
+    "question": "All squares are  rectangles, all  rectangles are  squares",
+    "answerIndex": 0,
+    "wrongAnswers": [
+      "Some squares are  squares",
+      "All squares are  squares",
+      "No square is  square",
+      "Some squares are not  squares"
+    ]
+  },
+  {
+    "id": 9,
+    "question": "All employees are  mammals, no  mammal is  plant",
+    "answerIndex": 2,
+    "wrongAnswers": [
+      "All employees are  plants",
+      "Some employees are  plants",
+      "No employee is  plant",
+      "Some employees are not  plants"
+    ]
+  }
+]

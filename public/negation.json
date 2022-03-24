@@ -1,0 +1,112 @@
+[
+  {
+    "id": 0,
+    "question": "For every person in this room, there is at least one characteristic that they have",
+    "answerIndex": 0,
+    "wrongAnswers": [
+      "There is a person in this room that has not one characteristic",
+      " For all the people in this room, each one of them has at least one characteristic",
+      "There is not a person in this room that has not one characteristic",
+      "There is a person in this room that has one characteristic"
+    ]
+  },
+  {
+    "id": 1,
+    "question": "There exist a triangle, such that the sides are even",
+    "answerIndex": 2,
+    "wrongAnswers": [
+      "there exists a triangle, so that one of the sides is even",
+      "for all triangles, at least one of the sides is odd",
+      "for all triangles, none of the sides are even",
+      "for all triangles, at least one of the sides is even"
+    ]
+  },
+  {
+    "id": 2,
+    "question": "There is a country in Asia",
+    "answerIndex": 3,
+    "wrongAnswers": [
+      "for all countries in Asia, it is none in Asia",
+      "for all countries in Asia, there is one in Asia",
+      "for all countries in Africa, there is none in Africa",
+      "for all countries in Asia, there is none in Asia"
+    ]
+  },
+  {
+    "id": 3,
+    "question": "If I don't use a comma after the initial clause, then I should use commas to separate the two clauses",
+    "answerIndex": 2,
+    "wrongAnswers": [
+      "I used a comma after the initial clause and I should not have used a comma to separate the two clauses",
+      "I should have used a comma after the initial clause and I should not have used a comma to separate the two clauses",
+      "There is a comma after the initial clause, and I should have used a comma to separate the two clauses",
+      " I used a comma after the initial clause or I should not have used a comma to separate the two clauses"
+    ]
+  },
+  {
+    "id": 4,
+    "question": "There exists an integer n for which n is prime",
+    "answerIndex": 0,
+    "wrongAnswers": [
+      "For all integers n, none is prime",
+      "There is an integer n, so that it is prime",
+      "For all integers n, one is prime",
+      "For all integers n, there exist an integer p that is not prime"
+    ]
+  },
+  {
+    "id": 5,
+    "question": "Jenny is shorter than me or the sky is not blue",
+    "answerIndex": 2,
+    "wrongAnswers": [
+      " for all people, the sky is not blue and Jenny is taller than that person",
+      "Jenny is not taller than me and the sky is not blue",
+      "Jenny is taller than me and the sky is blue",
+      "Jenny is taller than me or the sky is blue"
+    ]
+  },
+  {
+    "id": 6,
+    "question": "There are some students who are working class that have lower rates of recognizing words in print",
+    "answerIndex": 0,
+    "wrongAnswers": [
+      "For all students, some of the students are working class and have lower rates of recognizing words in print",
+      " For all students, some of the students are not working class and have higher rates of recognizing words in print",
+      "For some students, none of the students are working class and they have higher rates of recognizing words in print",
+      " For all students, some of the students are working class or have lower rates of recognizing words in print"
+    ]
+  },
+  {
+    "id": 7,
+    "question": "Kristyn is a female and blue jays are canada's national bird",
+    "answerIndex": 3,
+    "wrongAnswers": [
+      "Kristyn is a female and robins are Canada's national bird",
+      " For all females, Kristyn is not a female and for all birds, robins are not Canada's national bird",
+      "Kristyn is not a female and robins are not canada's national bird",
+      "Kristyn is not a female or robins are not canada's national bird"
+    ]
+  },
+  {
+    "id": 8,
+    "question": "For every natural number, there exists a finite number that is greater than it",
+    "answerIndex": 0,
+    "wrongAnswers": [
+      "There exists a natural number, so that there is no finite number that is greater than it",
+      "There does not exist a finite number that's greater than this",
+      " for all natural numbers, there is at least one other number that is greater",
+      "There doesn't exist a natural number, so that there is a finite number that is greater than it"
+    ]
+  },
+  {
+    "id": 9,
+    "question": "For every natural number, there is an integer that can be multiplied to it with no remainder",
+    "answerIndex": 1,
+    "wrongAnswers": [
+      "There is an integer that can be multiplied to a natural number with no remainder",
+      "There is a natural number, so that there is no integer that can be multiplied to it with no remainder",
+      " There exist an infinite number of natural numbers, and for all numbers in this infinite set, there are integers that can be multiplied to it with no remainder",
+      "is a natural number, so that there is no tetrahedron that can be inscribed in a cube with no remainder"
+    ]
+  }
+]

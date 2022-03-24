@@ -7,6 +7,17 @@
   width: 60%;
 }
 
+.ScoreContainer {
+  flex-direction: "row";
+}
+
+.NumRight {
+  color: #37ebd5;
+  /* font-family: "Anonymous Pro";
+  font-weight: 700;
+  font-size: 1.2em; */
+}
+
 .Question {
   font-weight: bold;
   margin-bottom: 24px;
@@ -26,8 +37,24 @@
   border-radius: 8px;
 }
 
-.ChoiceButton:hover {
-  border-color: mediumspringgreen;
+.NextButton {
+  font-size: 0.8em;
+  padding: 0px 18px;
+  background: white;
+  border: none;
+}
+
+.Bottom {
+  position: absolute;
+  bottom: 2em;
+}
+
+.Right {
+  border-color: #37ebd5;
+}
+
+.Wrong {
+  border-color: rgb(255, 40, 21);
 }
 
 p {
